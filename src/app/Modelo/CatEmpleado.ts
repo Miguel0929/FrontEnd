@@ -1,0 +1,19 @@
+export class CatEmpleado{
+    id:number;
+    strNombre:String;
+    strApaterno:String;
+    strAmaterno:String;
+    dteFechaNaci:String;
+    intEdad:number;
+    strSexo:String;
+    dceEstatura:String;
+    dcePeso:String;
+    strAlergia:String;
+    strRfc:String;
+    strCurp:String;
+    strNss:String;
+    strEstadoCivil:String;
+    strCorreo:String;
+    idTipoSangre:number;
+    idNacionalidad:number;
+}

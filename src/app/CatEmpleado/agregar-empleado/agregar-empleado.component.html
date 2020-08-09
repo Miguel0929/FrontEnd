@@ -1,0 +1,37 @@
+<h3> Agregar Empleado</h3>
+
+<label for="">Nombre:</label>
+<input [(ngModel)]="empleado.strNombre" name="nombre" type="text">
+<label for="">Paterno:</label>
+<input [(ngModel)]="empleado.strApaterno" name="paterno" type="text">
+<label for="">Materno:</label>
+<input [(ngModel)]="empleado.strAmaterno" name="materno" type="text">
+<label for="">Fecha Nacimiento:</label>
+<input [(ngModel)]="empleado.dteFechaNaci" name="naci" type="date">
+<label for="">Edad:</label>
+<input [(ngModel)]="empleado.intEdad" name="edad" type="number">
+<label for="">Sexo:</label>
+<input [(ngModel)]="empleado.strSexo" name="sexo" type="text">
+<label for="">Estatura:</label>
+<input [(ngModel)]="empleado.dceEstatura" name="estatura" type="text">
+<label for="">Peso:</label>
+<input [(ngModel)]="empleado.dcePeso" name="peso" type="text">
+<label for="">Alergia:</label>
+<input [(ngModel)]="empleado.strAlergia" name="alergia" type="text">
+<label for="">RFC:</label>
+<input [(ngModel)]="empleado.strRfc" name="rfc" type="text">
+<label for="">CURP:</label>
+<input [(ngModel)]="empleado.strCurp" name="curp" type="text">
+<label for="">NSS:</label>
+<input [(ngModel)]="empleado.strNss" name="nss" type="text">
+<label for="">Estado Civil:</label>
+<input [(ngModel)]="empleado.strEstadoCivil" name="ec" type="text">
+<label for="">Correo:</label>
+<input [(ngModel)]="empleado.strCorreo" name="correo" type="email">
+<label for="">Tipo de Sangre:</label>
+<input [(ngModel)]="empleado.idTipoSangre" name="tiposangre" type="number">
+<label for="">Nacionalidad:</label>
+<input [(ngModel)]="empleado.idNacionalidad" name="nacionalidad" type="number">
+<br>
+<button (click)="save()">Guardar</button>
+

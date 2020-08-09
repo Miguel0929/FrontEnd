@@ -1,0 +1,50 @@
+<h3>Empleados</h3>
+<button (click)="add()">Agregar Empleado</button>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Paterno</th>
+            <th>Materno</th>
+            <th>Fecha Nacimiento</th>
+            <th>Edad</th>
+            <th>Sexo</th>
+            <th>Estatura</th>
+            <th>Peso</th>
+            <th>Alergia</th>
+            <th>RFC</th>
+            <th>CURP</th>
+            <th>NSS</th>
+            <th>Estado Civil</th>
+            <th>Correo</th>
+            <th>Tipo de Sangre</th>
+            <th>Nacionalidad</th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let empleado of empleados">
+            <td>{{empleado.id}}</td>
+            <td>{{empleado.strNombre}}</td>
+            <td>{{empleado.strApaterno}}</td>
+            <td>{{empleado.strAmaterno}}</td>
+            <td>{{empleado.dteFechaNaci}}</td>
+            <td>{{empleado.intEdad}}</td>
+            <td>{{empleado.strSexo}}</td>
+            <td>{{empleado.dceEstatura}}</td>
+            <td>{{empleado.dcePeso}}</td>
+            <td>{{empleado.strAlergia}}</td>
+            <td>{{empleado.strRfc}}</td>
+            <td>{{empleado.strCurp}}</td>
+            <td>{{empleado.strNss}}</td>
+            <td>{{empleado.strEstadoCivil}}</td>
+            <td>{{empleado.strCorreo}}</td>
+            <td>{{empleado.idTipoSangre}}</td>
+            <td>{{empleado.idNacionalidad}}</td>
+            <td>
+                <button (click)="edit(empleado)">Editar</button>
+                <button (click)="delete(empleado)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
